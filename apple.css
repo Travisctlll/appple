@@ -23,9 +23,7 @@
   justify-content: center;
   align-items: center;
 }
-.bosoo {
-  display: none;
-}
+
 .background {
   width: 100%;
   aspect-ratio: 2.7;
