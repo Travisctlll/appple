@@ -1,311 +1,286 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
   height: 44px;
   width: 100%;
   background-color: #f5f5f7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header img {
+  height: 20px;
 }
 
 .header button {
-  background-color: transparent;
+  background: none;
   border: none;
+  font-size: 12px;
+  color: #1d1d1f;
   cursor: pointer;
 }
 
-.header2 {
+.text {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 18px;
+}
+
+.header2 {
+  background: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #1d1d1f;
 }
 
 .background {
   width: 100%;
-  aspect-ratio: 2.7;
-  margin: 0;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
-}
-
-.background img {
-  aspect-ratio: 2.7;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  z-index: -1;
-}
-
-.Background-text {
-  margin-top: 50px;
-  font-size: 4vw;
-  color: white;
-  justify-content: center;
-  align-items: end;
-  display: flex;
-}
-
-.Background-text2 {
-  color: white;
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  font-size: 24px;
-}
-
-.learnmore {
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-}
-.background2 {
-  width: 100%;
-  position: absolute;
-  margin: 0;
-}
-.background2 img {
-  aspect-ratio: 5/3;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  z-index: -1;
-}
-.part {
-  font-size: 4vw;
-  color: white;
-  justify-content: center;
-  align-items: end;
-  display: flex;
-}
-.part2 {
-  color: white;
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  font-size: 24px;
-}
-.learnmore2 {
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-}
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.hero-section2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.background3 {
-  width: 100%;
-  position: absolute;
-  margin: 0;
-}
-.background3 img {
-  aspect-ratio: 2.7;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  z-index: -1;
-}
-.part3 {
-  font-size: 4vw;
-  color: black;
-  justify-content: center;
-  display: flex;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  align-items: end;
-}
-.part4 {
-  color: black;
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  font-size: 24px;
-}
-.shop {
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-}
-.hero-section3 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 100px;
-}
-.background4 {
-  width: 100%;
-  position: absolute;
-  margin: 0;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
-}
-.grid-item {
-  width: 49%;
-  height: 580px;
-  position: relative;
+  align-items: center;
   overflow: hidden;
 }
 
-.grid-item > img {
-  width: 100%;
+.background img {
   position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: -1;
 }
-.hero-section_img {
-  justify-content: center;
+
+.hero-section,
+.hero-section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  gap: 24px;
-}
-.part5 {
-  color: black;
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  font-size: 24px;
-}
-.learnmore3 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-}
-.part6 {
-  color: white;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  align-items: end;
-  gap: 10px;
-}
-.learnmore4 {
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-  align-items: end;
-  padding-bottom: 130px;
-}
-.Vector {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.part7 {
-  color: black;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.part8 {
-  color: rgb(12, 9, 9);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.learnmore5 {
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-  align-items: end;
-}
-.vecwa {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.part9 {
-  color: black;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-.part10 {
-  color: rgb(12, 9, 9);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.learnmore6 {
-  justify-content: center;
-  align-items: end;
-  display: flex;
-  border-radius: 15px;
-  gap: 16px;
-  align-items: end;
-}
-.logo {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+  gap: 14px;
+  text-align: center;
 }
 
-.part11 {
-  color: rgb(12, 9, 9);
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.Background-text,
+.part,
+.part3 {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
-.logo2 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
+
+.Background-text,
+.part {
+  color: white;
 }
-.part12 {
-  color: rgb(12, 9, 9);
+
+.part3 {
+  color: black;
+}
+
+.Background-text2,
+.part2,
+.part4 {
+  font-size: clamp(16px, 3vw, 22px);
+  font-weight: 400;
+}
+
+.Background-text2,
+.part2 {
+  color: white;
+}
+
+.part4 {
+  color: black;
+}
+
+.learnmore,
+.learnmore2,
+.learnmore3,
+.learnmore4,
+.learnmore5,
+.learnmore6,
+.shop {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.learnmore button,
+.learnmore2 button,
+.learnmore3 button,
+.learnmore4 button,
+.learnmore5 button,
+.learnmore6 button,
+.shop button {
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+.grid-item {
+  position: relative;
+  height: 580px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.grid-item > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* iPad Air card */
+
+.hero-section_img {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  text-align: center;
 }
+
+.part5 {
+  font-size: 18px;
+}
+
+.part6 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.Vector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.vecwa {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.part7,
+.part8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.part9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.part10 {
+  font-size: 16px;
+}
+
+.logo,
+.logo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.part11,
+.part12 {
+  text-align: center;
+  font-size: 15px;
+  max-width: 260px;
+}
+
 .scroll {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+  gap: 24px;
+  padding: 30px 0;
 }
 
-@media only screen and (max-width: 480px) {
+.scroll img {
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
   .text {
     display: none;
   }
-  .background > :first-child {
-    display: none;
+
+  .background {
+    height: 85vh;
   }
-  .bosoo {
-    display: block;
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    height: 520px;
+  }
+
+  .Background-text,
+  .part,
+  .part3 {
+    font-size: 34px;
+  }
+
+  .Background-text2,
+  .part2,
+  .part4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    gap: 14px;
+  }
+
+  .background {
+    height: 80vh;
+  }
+
+  .grid-item {
+    height: 480px;
   }
 }
